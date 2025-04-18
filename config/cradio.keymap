@@ -35,10 +35,17 @@
             label = "YAN";
         };
 
-        new_macro: new_macro {
+        parol: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kp C &kp N &kp H &kp F &kp N &kp J &kp C &kp A &kp T &kp H &kp F &kp ENTER>;
+            label = "NEW_MACRO";
+        };
+
+        yazik: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LEFT_SHIFT)>;
             label = "NEW_MACRO";
         };
     };
@@ -57,10 +64,10 @@
 
         right_layer {
             bindings = <
-&kp INS     &kp N1  &kp N2  &kp N3  &trans    &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &kp COLON
-&kp DEL     &kp N4  &kp N5  &kp N6  &trans    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp SEMI
-&caps_word  &kp N7  &kp N8  &kp N9  &kp N0    &trans    &trans     &trans     &trans     &trans
-                            &none   &yan      &trans    &trans
+&yan     &kp N1  &kp N2  &kp N3  &trans    &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &kp COLON
+&kp DEL  &kp N4  &kp N5  &kp N6  &trans    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp SEMI
+&yazik   &kp N7  &kp N8  &kp N9  &kp N0    &trans    &trans     &trans     &trans     &trans
+                         &none   &parol    &trans    &trans
             >;
         };
 
