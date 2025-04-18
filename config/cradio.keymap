@@ -35,11 +35,11 @@
             label = "YAN";
         };
 
-        parol: new_macro {
+        parol: parol {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp C &kp N &kp H &kp F &kp N &kp J &kp C &kp A &kp T &kp H &kp F &kp ENTER>;
-            label = "NEW_MACRO";
+            label = "parol";
         };
 
         yazik: new_macro {
