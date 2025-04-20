@@ -69,9 +69,10 @@
 
         def {
             bindings = <&tog 0>;
-            key-positions = <0 9>;
+            key-positions = <29 9>;
             timeout-ms = <50>;
             require-prior-idle-ms = <50>;
+            layers = <4>;
         };
     };
 
@@ -118,7 +119,7 @@
             bindings = <
 &kp Q      &kp W  &kp E  &kp R     &kp T        &kp Y      &kp U     &kp I  &kp O      &kp P
 &kp A      &kp S  &kp D  &kp F     &kp G        &kp H      &kp J     &kp K  &kp L      &kp SEMI
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp V        &kp B      &kp N     &kp M  &kp COMMA  &kp DOT
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp V        &kp B      &kp N     &kp M  &kp COMMA  &kp ESCAPE
                          &kp LGUI  &kp LCTRL    &kp ENTER  &kp BSPC
             >;
         };
