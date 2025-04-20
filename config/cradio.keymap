@@ -70,8 +70,8 @@
         def {
             bindings = <&tog 0>;
             key-positions = <10 19>;
-            timeout-ms = <2>;
-            require-prior-idle-ms = <1>;
+            timeout-ms = <16>;
+            require-prior-idle-ms = <16>;
             layers = <4>;
         };
     };
