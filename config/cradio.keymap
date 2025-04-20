@@ -68,10 +68,10 @@
         };
 
         def {
-            bindings = <&tog 0>;
+            bindings = <&tog 1>;
             key-positions = <29 9>;
-            timeout-ms = <50>;
-            require-prior-idle-ms = <50>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <30>;
             layers = <4>;
         };
     };
