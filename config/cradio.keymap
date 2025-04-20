@@ -81,7 +81,7 @@
 
         default_layer {
             bindings = <
-&kp ESCAPE      &kp Q  &kp W  &kp E    &kp T        &kp I         &kp U         &kp I      &kp O    &kp P
+&kp ESCAPE      &kp Q  &kp W  &kp E    &kp R        &kp T         &kp I         &kp I      &kp O    &kp P
 &kp LEFT_SHIFT  &kp A  &kp S  &kp D    &kp G        &kp J         &kp B         &none      &none    &none
 &kp LCTRL       &kp Z  &kp C  &kp X    &kp C        &kp N         &kp LEFT_WIN  &kp COMMA  &kp DOT  &kp FSLH
                               &lt 1 M  &kp SPACE    &kp LEFT_ALT  &lt 2 BSPC
