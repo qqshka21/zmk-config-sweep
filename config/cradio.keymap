@@ -16,6 +16,12 @@
             require-prior-idle-ms = <100>;
             bindings = <&kp>, <&kp>;
         };
+
+        tumbler: tumbler {
+            compatible = "zmk,behavior-toggle-layer";
+            label = "TUMBLER";
+            #binding-cells = <1>;
+        };
     };
 
     conditional_layers {
@@ -47,6 +53,22 @@
             #binding-cells = <0>;
             bindings = <&kp LA(LEFT_SHIFT)>;
             label = "NEW_MACRO";
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        four_liyer {
+            bindings = <&tog 4>;
+            key-positions = <0 9>;
+            timeout-ms = <1>;
+            slow-release;
+        };
+
+        def {
+            bindings = <&tog 0>;
+            key-positions = <10 19>;
         };
     };
 
@@ -86,6 +108,15 @@
 &bootloader  &trans  &trans  &trans      &bt BT_SEL 1    &trans  &trans  &trans  &trans  &bootloader
 &trans       &trans  &trans  &bt BT_CLR  &bt BT_SEL 2    &trans  &trans  &trans  &trans  &trans
                              &trans      &trans          &trans  &trans
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&kp Q      &kp W  &kp E  &kp R     &kp T       &kp Y      &kp U     &kp I  &kp O      &kp P
+&kp A      &kp S  &kp D  &kp F     &kp G       &kp H      &kp J     &kp K  &kp L      &kp SEMI
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp V       &kp B      &kp N     &kp M  &kp COMMA  &kp DOT
+                         &kp LGUI  &kp CAPS    &kp ENTER  &kp BSPC
             >;
         };
     };
