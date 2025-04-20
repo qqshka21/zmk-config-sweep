@@ -62,9 +62,9 @@
         four_liyer {
             bindings = <&tog 4>;
             key-positions = <0 9>;
-            timeout-ms = <2>;
+            timeout-ms = <16>;
             layers = <0>;
-            require-prior-idle-ms = <2>;
+            require-prior-idle-ms = <16>;
         };
 
         def {
