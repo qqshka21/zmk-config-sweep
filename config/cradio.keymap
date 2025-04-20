@@ -68,7 +68,7 @@
         };
 
         def {
-            bindings = <&tog 1>;
+            bindings = <&to 0>;
             key-positions = <29 9>;
             timeout-ms = <30>;
             require-prior-idle-ms = <30>;
