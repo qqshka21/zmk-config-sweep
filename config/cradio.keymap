@@ -74,6 +74,14 @@
             require-prior-idle-ms = <30>;
             layers = <4>;
         };
+
+        lang {
+            bindings = <&yazik>;
+            key-positions = <1 2>;
+            timeout-ms = <20>;
+            require-prior-idle-ms = <20>;
+            layers = <4>;
+        };
     };
 
     keymap {
