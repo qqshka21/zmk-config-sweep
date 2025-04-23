@@ -72,7 +72,6 @@
             key-positions = <9 29>;
             timeout-ms = <30>;
             require-prior-idle-ms = <30>;
-            layers = <4>;
         };
 
         lang {
@@ -81,6 +80,13 @@
             timeout-ms = <20>;
             require-prior-idle-ms = <20>;
             layers = <4>;
+        };
+
+        last {
+            bindings = <&to 5>;
+            key-positions = <9 19>;
+            timeout-ms = <10>;
+            require-prior-idle-ms = <10>;
         };
     };
 
@@ -129,6 +135,15 @@
 &kp A      &kp S  &kp D  &kp F     &kp G        &kp H      &kp J          &kp K  &kp L      &kp SEMI
 &kp LSHFT  &kp Z  &kp X  &kp C     &kp V        &kp B      &kp N          &kp M  &kp COMMA  &kp ENTER
                          &kp LGUI  &kp LCTRL    &kp SPACE  &kp BACKSPACE
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&kp ESCAPE      &kp Q  &kp W  &kp E     &kp R        &kp T    &kp I    &kp I      &kp O    &kp P
+&kp LEFT_SHIFT  &kp A  &kp S  &kp D     &kp F        &kp J    &kp B    &none      &none    &none
+&kp LCTRL       &kp Z  &kp X  &kp C     &kp C        &kp N    &kp M    &kp COMMA  &kp DOT  &kp LEFT_WIN
+                              &kp LALT  &kp SPACE    &kp TAB  &kp TAB
             >;
         };
     };
