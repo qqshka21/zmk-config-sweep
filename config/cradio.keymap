@@ -58,17 +58,15 @@
         volup: volup {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&ht C_VOLUME_UP T>;
-            label = "volup";
-            tap-ms = <1>;
-            wait-ms = <5>;
+            bindings = <&kp C_VOLUME_UP>;
+            label = "VOLUP";
         };
 
-        voldoun: voldoun {
+        voldown: voldown {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&ht C_VOLUME_DOWN G>;
-            label = "voldoun";
+            bindings = <&kp K_VOLUME_DOWN2>;
+            label = "VOLDOWN";
         };
     };
 
@@ -105,6 +103,22 @@
             timeout-ms = <10>;
             require-prior-idle-ms = <10>;
             layers = <0 4>;
+        };
+
+        volup {
+            bindings = <&volup>;
+            key-positions = <0 10>;
+            timeout-ms = <5>;
+            require-prior-idle-ms = <5>;
+            layers = <4 5>;
+        };
+
+        voldown {
+            bindings = <&voldown>;
+            key-positions = <10 20>;
+            timeout-ms = <5>;
+            require-prior-idle-ms = <5>;
+            layers = <4 5>;
         };
     };
 
