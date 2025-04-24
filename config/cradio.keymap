@@ -58,19 +58,17 @@
         volup: volup {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&ht C_VOLUME_UP T &kp T>;
+            bindings = <&ht C_VOLUME_UP T>;
             label = "volup";
             tap-ms = <1>;
-            wait-ms = <10>;
+            wait-ms = <5>;
         };
 
         voldoun: voldoun {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&ht C_VOLUME_DOWN G &kp G>;
+            bindings = <&ht C_VOLUME_DOWN G>;
             label = "voldoun";
-            wait-ms = <10>;
-            tap-ms = <1>;
         };
     };
 
