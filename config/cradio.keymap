@@ -115,7 +115,7 @@
 
         voldown {
             bindings = <&voldown>;
-            key-positions = <20 21>;
+            key-positions = <20 10>;
             timeout-ms = <4>;
             require-prior-idle-ms = <4>;
             layers = <4 5>;
@@ -163,8 +163,8 @@
 
         layer_4 {
             bindings = <
-&kp Q      &kp W  &kp E  &kp R     &volup       &kp Y      &kp U          &kp I  &kp O      &kp P
-&kp A      &kp S  &kp D  &kp F     &voldoun     &kp H      &kp J          &kp K  &kp L      &kp SEMI
+&kp Q      &kp W  &kp E  &kp R     &kp T        &kp Y      &kp U          &kp I  &kp O      &kp P
+&kp A      &kp S  &kp D  &kp F     &kp G        &kp H      &kp J          &kp K  &kp L      &kp SEMI
 &kp LSHFT  &kp Z  &kp X  &kp C     &kp V        &kp B      &kp N          &kp M  &kp COMMA  &kp ENTER
                          &kp LGUI  &kp LCTRL    &kp SPACE  &kp BACKSPACE
             >;
