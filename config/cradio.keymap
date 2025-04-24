@@ -116,8 +116,8 @@
         voldown {
             bindings = <&voldown>;
             key-positions = <10 20>;
-            timeout-ms = <5>;
-            require-prior-idle-ms = <5>;
+            timeout-ms = <4>;
+            require-prior-idle-ms = <4>;
             layers = <4 5>;
         };
     };
