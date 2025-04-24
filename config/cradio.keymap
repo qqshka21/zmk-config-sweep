@@ -58,7 +58,7 @@
         volup: volup {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp C_VOLUME_UP>;
+            bindings = <&kp C_VOLUME_DOWN>;
             label = "VOLUP";
         };
 
