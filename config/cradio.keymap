@@ -54,22 +54,6 @@
             bindings = <&kp LA(LEFT_SHIFT)>;
             label = "yazik";
         };
-
-        volup: volup {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp C_VOL_UP>;
-            label = "VOLUP";
-        };
-
-        voldown: voldown {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp C_VOL_DN>;
-            label = "VOLDOWN";
-            wait-ms = <0>;
-            tap-ms = <0>;
-        };
     };
 
     combos {
@@ -108,18 +92,10 @@
         };
 
         volup {
-            bindings = <&volup>;
+            bindings = <&mt C_VOL_UP K_MUTE>;
             key-positions = <21 20>;
-            timeout-ms = <5>;
+            timeout-ms = <10>;
             require-prior-idle-ms = <5>;
-            layers = <4 5>;
-        };
-
-        voldown {
-            bindings = <&voldown>;
-            key-positions = <20 10>;
-            timeout-ms = <0>;
-            require-prior-idle-ms = <0>;
             layers = <4 5>;
         };
     };
